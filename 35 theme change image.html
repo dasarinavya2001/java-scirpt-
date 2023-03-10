@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        .dark-mode{
+            background-color: rgba(34, 33, 33, 0.862);
+            color: white;
+        }
+        .dark-mode a{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <img src="moon 1 (1).png" alt="" id="icon">
+    <h1>jay ambica matha</h1>
+    <a href="">uppalamma</a>
+    <script>
+        // (1)add (2)remove (3)toggle (4)contains
+        let icon = document.querySelector("#icon")
+        icon.addEventListener("click",function(){
+            document.body.classList.toggle("dark-mode");
+            if (document.body.classList.contains("dark-mode") == true){
+                icon.src="sun2.png";
+            }else{
+                icon.src="moon 1 (1).png"
+            }
+        
+        })
+    </script>
+</body>
+</html>
